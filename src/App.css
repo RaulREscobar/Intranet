@@ -1,38 +1,17 @@
-.App {
-  text-align: center;
+.login{
+  width: 100vw;
+  padding: 20px;
+  background-image: url(https://thumbs.dreamstime.com/b/tecnolog%C3%ADa-engranajes-ordenador-banner-fondo-fuente-circuito-futurista-c%C3%ADrculo-azul-rel%C3%A1mpago-electricidad-abstracto-vector-220508888.jpg);
+  background-repeat: no-repeat;
+  background-color: aquamarine;
+  margin-top: 20%;
+  border-radius: 5px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.logo{
+  background-image: url("../public/img/Logo\ empresa\ comunicación\ simple\ morado\ \(1\).png");
+  width: 100px;
+  margin: auto;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  html, .App{
+    background: linear-gradient(to right, black 50%, #1188ac);
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
