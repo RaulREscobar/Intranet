@@ -1,5 +1,6 @@
 import React from 'react'
 import { Form, FormGroup, Label, Input, Button} from 'reactstrap'
+import { Link } from "react-router-dom"
 
 function FormLogin() {
     return (
@@ -39,7 +40,7 @@ function FormLogin() {
                     outline
                     className='d-flex mx-auto'
                     >
-                    Ingresar
+                   <Link to="/home">Ingresar</Link> 
                 </Button>
             </Form>
         </div>

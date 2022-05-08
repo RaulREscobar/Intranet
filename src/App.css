@@ -15,3 +15,7 @@
   html, .App{
     background: linear-gradient(to right, black 50%, #1188ac);
   }
+  a {
+    text-decoration: auto;
+    color: #8ec6f9;
+  }

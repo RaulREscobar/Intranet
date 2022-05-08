@@ -1,12 +1,33 @@
 import React from 'react'
-import CardConteiner from '../components/CardConteiner'
+import { 
+  Card,
+  CardText, 
+  CardTitle, 
+  CardBody,
+  Col,
+  CardImg,
+ } from 'reactstrap'
 import FormLogin from '../components/FormLogin'
 
 function Login() {
   return (
     <div className='container login'>
-
-        <CardConteiner />
+        <Col sm="4">
+                    <Card color='light' >
+                        <CardBody>
+                            <CardTitle tag="h5">
+                                <div className='logo'>
+                                <CardImg
+                               src="https://nets.com.ar/wp-content/uploads/2022/02/cropped-Logo-empresa-comunicacion-simple-morado-1.png"
+                               />
+                                </div>
+                            </CardTitle>
+                            <CardText>
+                                <FormLogin />
+                            </CardText>
+                        </CardBody>
+                    </Card>
+                </Col>
     </div>
   )
 }
