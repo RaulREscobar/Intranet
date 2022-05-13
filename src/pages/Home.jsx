@@ -1,8 +1,15 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom'
+import Dashboard from '../components/Dashboard'
+import User from '../components/User'
 
 const Home = () => {
   return (
-    <div>Hola</div>
+    <div>
+      < Dashboard />
+      < User />
+      < Outlet />
+    </div>
   )
 }
 

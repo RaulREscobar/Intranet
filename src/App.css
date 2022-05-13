@@ -1,3 +1,6 @@
+:root{
+  --bg-color: linear-gradient(to right, black 50%, #1188ac);
+}
 .login{
   width: 100vw;
   padding: 20px;
@@ -12,10 +15,37 @@
   width: 100px;
   margin: auto;
   }
-  html, .App{
-    background: linear-gradient(to right, black 50%, #1188ac);
+  html, .App, header, .avatar, section{
+    background: var(--bg-color);
   }
   a {
     text-decoration: auto;
     color: #8ec6f9;
   }
+
+
+.avatar{
+  vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  font-size: 5rem;
+  border:5px white solid;
+}
+.icon{
+  position: absolute;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  bottom: 0px;
+  right: 85px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
