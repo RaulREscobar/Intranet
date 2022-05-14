@@ -41,11 +41,20 @@
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  bottom: 0px;
-  right: 85px;
+  bottom: -5px;
+  right: 0px;
   background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   color: black;
+}
+.edit{
+  font-size: 20px;
+}
+
+.img{
+  padding: 20px;
+  width: 100%;
+  height: auto;
 }

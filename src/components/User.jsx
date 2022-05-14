@@ -4,9 +4,11 @@ import { EditButton } from './EditButton'
 const User = () => {
   return (
     <div>
-        <section className='d-flex justify-content-center position-relative'>
-            <span className='avatar'>RR</span>
-            <EditButton />
+        <section className='d-flex justify-content-center'>
+           <span className='position-relative avatar'>
+           <EditButton />
+               RR
+           </span>        
         </section>
     </div>
   )
