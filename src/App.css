@@ -22,7 +22,9 @@
     text-decoration: auto;
     color: #8ec6f9;
   }
-
+.bg-central {
+  background: var(--bg-color);
+}
 
 .avatar{
   vertical-align: middle;

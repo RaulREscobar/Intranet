@@ -1,6 +1,8 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
+import Birthday from '../components/Birthday'
 import Dashboard from '../components/Dashboard'
+import Extra from '../components/Extra'
 import Layout from '../components/Layout'
 import User from '../components/User'
 
@@ -9,7 +11,9 @@ const Home = () => {
     <div>
       < Dashboard />
       < User />
+      < Extra />
       < Layout />
+      < Birthday />
       < Outlet />
     </div>
   )
