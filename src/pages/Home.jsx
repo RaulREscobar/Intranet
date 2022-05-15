@@ -1,5 +1,6 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
+import BarNav from '../components/BarNav'
 import Birthday from '../components/Birthday'
 import Dashboard from '../components/Dashboard'
 import Extra from '../components/Extra'
@@ -14,6 +15,7 @@ const Home = () => {
       < Extra />
       < Layout />
       < Birthday />
+      < BarNav />
       < Outlet />
     </div>
   )

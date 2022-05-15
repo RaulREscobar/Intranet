@@ -4,8 +4,8 @@ import TitleSection from './TitleSection'
 
 const Birthday = () => {
     return (
-        <div className='p-3 bg-central'>
-            < TitleSection title="Nuestros cumpleaañeros del mes" />
+        <div className='p-3 bg-central mb-5'>
+            < TitleSection title="Nuestros cumpleañeros del mes" />
             <Table
                 bordered
                 dark
