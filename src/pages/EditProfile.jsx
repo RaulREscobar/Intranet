@@ -1,8 +1,11 @@
 import React from 'react'
+import BarNav from '../components/BarNav'
 
 const EditProfile = () => {
   return (
-    <div>EditProfile</div>
+    <div>EditProfile
+      <BarNav  />
+    </div>
   )
 }
 

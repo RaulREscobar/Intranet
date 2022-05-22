@@ -11,8 +11,8 @@ root.render(
     <BrowserRouter>
         <Routes>
             <Route path="/" element={<App />} />
-            <Route path='home' element={<Home />} />
-            <Route path='editProfile' element={<EditProfile />}/>
+            <Route path='/home' element={<Home />} />
+            <Route path='/editProfile' element={<EditProfile />}/>
         </Routes>
     </BrowserRouter>,  
 );

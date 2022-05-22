@@ -1,40 +1,55 @@
-import React from 'react'
-import {Nav, NavItem, NavLink } from 'reactstrap'
+import React, { useState, useEffect } from 'react'
+import { Nav, NavItem, NavLink } from 'reactstrap'
+import { Link, Outlet, useLocation } from "react-router-dom"
 
 function BarNav() {
-    const home = document.querySelector('nav-home')
-    console.log(home)
-    //home.style.backgroundColor = "red"
-  /*   const noRefCheck= ( e )=>{
-        e.preventDefualt()
-        e.classList.toggle("active")
-        e.style.background = "red"
+    let [activeHome, setActiveHome] = useState("")
+    let [activeUser, setActiveUser] = useState("")
+    let location = useLocation()
 
-    } */
+    useEffect(() => {
+        switch (location.pathname) {
+            case "/home":
+                setActiveHome("active");
+                setActiveUser("");
 
-    return (        
-            <div>
-                <Nav tabs  className='d-flex justify-content-center position-fixed bottom-0 col-12 bg-light'>
-                    <NavItem >
-                        <NavLink
-                            id='nav-home'
-                            className="active"
-                            onClick={function noRefCheck(){}}
-                        >
-                           <i class="bi bi-house"></i>
-                        </NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink
-                            id="nav-user"
-                            className=""
-                            onClick={function noRefCheck() {}}
-                        >
+                break;
+            case "/editProfile":
+                setActiveUser("active");
+                setActiveHome("")
+
+                break
+            default:
+                break;
+        }
+    })
+
+    return (
+        <div>
+            <Nav tabs className='d-flex justify-content-center position-fixed bottom-0 col-12 bg-light'>
+                <NavItem >
+                    <NavLink
+                        className={activeHome}
+                    >
+                        <Link to={"/home"}>
+                            <i class="bi bi-house"></i>
+                        </Link>
+
+                    </NavLink>
+                </NavItem>
+                <NavItem>
+                    <NavLink
+                        className={activeUser}
+                    >
+                        <Link to={"/editProfile"}>
                             <i class="bi bi-person"></i>
-                        </NavLink>
-                    </NavItem>
-                </Nav>
-            </div>
+                        </Link>
+
+                    </NavLink>
+                </NavItem>
+            </Nav>
+            < Outlet />
+        </div>
     )
 }
 

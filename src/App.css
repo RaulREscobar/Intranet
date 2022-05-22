@@ -22,6 +22,9 @@
     text-decoration: auto;
     color: #8ec6f9;
   }
+  a, .active, .nav-link{
+    color: blue
+  }
 .bg-central {
   background: var(--bg-color);
 }
