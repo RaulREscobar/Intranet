@@ -41,6 +41,14 @@ function BarNav() {
                         </Link>
                     </NavLink>
                 </NavItem>
+                <NavItem>
+                    <NavLink className={activeUser} >
+                        <Link to={"/"}>
+                            <i class="bi bi-arrow-bar-left"></i>{' '}
+                            salir
+                        </Link>
+                    </NavLink>
+                </NavItem>
             </Nav>
             < Outlet />
         </div>
