@@ -7,7 +7,7 @@ function BarNav() {
     let [activeUser, setActiveUser] = useState("")
     let location = useLocation()
 
-    useEffect(() => {
+    useEffect((activeHome) => {
         switch (location.pathname) {
             case "/home":
                 setActiveHome("active");
@@ -28,23 +28,17 @@ function BarNav() {
         <div>
             <Nav tabs className='d-flex justify-content-center position-fixed bottom-0 col-12 bg-light'>
                 <NavItem >
-                    <NavLink
-                        className={activeHome}
-                    >
+                    <NavLink className={activeHome} >
                         <Link to={"/home"}>
                             <i class="bi bi-house"></i>
                         </Link>
-
                     </NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink
-                        className={activeUser}
-                    >
+                    <NavLink className={activeUser} >
                         <Link to={"/editProfile"}>
                             <i class="bi bi-person"></i>
                         </Link>
-
                     </NavLink>
                 </NavItem>
             </Nav>

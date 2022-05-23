@@ -1,7 +1,8 @@
-:root{
+:root {
   --bg-color: linear-gradient(to right, black 50%, #1188ac);
 }
-.login{
+
+.login {
   width: 100vw;
   padding: 20px;
   background-image: url(https://thumbs.dreamstime.com/b/tecnolog%C3%ADa-engranajes-ordenador-banner-fondo-fuente-circuito-futurista-c%C3%ADrculo-azul-rel%C3%A1mpago-electricidad-abstracto-vector-220508888.jpg);
@@ -10,26 +11,31 @@
   margin-top: 20%;
   border-radius: 5px;
 }
-.logo{
+
+.logo {
   background-image: url("../public/img/Logo\ empresa\ comunicación\ simple\ morado\ \(1\).png");
   width: 100px;
   margin: auto;
-  }
-  html, .App, header, .avatar, section{
-    background: var(--bg-color);
-  }
-  a {
-    text-decoration: auto;
-    color: #8ec6f9;
-  }
-  a, .active, .nav-link{
-    color: blue
-  }
+}
+
+html,
+.App,
+header,
+.avatar,
+section {
+  background: var(--bg-color);
+}
+
+a {
+  text-decoration: auto;
+  color: #8ec6f9;
+}
+
 .bg-central {
   background: var(--bg-color);
 }
 
-.avatar{
+.avatar {
   vertical-align: middle;
   width: 150px;
   height: 150px;
@@ -37,11 +43,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color:white;
+  color: white;
   font-size: 5rem;
-  border:5px white solid;
+  border: 5px white solid;
 }
-.icon{
+
+.icon {
   position: absolute;
   border-radius: 50%;
   width: 40px;
@@ -54,11 +61,12 @@
   align-items: center;
   color: black;
 }
-.edit{
+
+.edit {
   font-size: 20px;
 }
 
-.img{
+.img {
   padding: 20px;
   width: 100%;
   height: auto;
