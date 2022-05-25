@@ -28,7 +28,7 @@ section {
 
 a {
   text-decoration: auto;
-  color: #8ec6f9;
+  color: #1188ac;
 }
 
 .bg-central {
@@ -70,4 +70,11 @@ a {
   padding: 20px;
   width: 100%;
   height: auto;
+}
+
+.date {
+  padding: 0.8rem 1rem;
+  margin: 5px 30px;
+  background-color: white;
+  border-radius: 15px;
 }
