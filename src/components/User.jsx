@@ -6,7 +6,7 @@ const User = () => {
     <div>
         <section className='d-flex justify-content-center'>
            <span className='position-relative avatar'>
-           <EditButton />
+           <EditButton url="/editProfile" />
                RR
            </span>        
         </section>
