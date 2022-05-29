@@ -24,7 +24,8 @@
     min-height: 200px;
     max-height: 600px;
     overflow-y: auto;
-    background-color:#fff;
+    background: linear-gradient(to right, white 5%, #1188ac);
+    border-radius: 15px;
 }
 
 .modal-close{

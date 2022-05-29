@@ -1,19 +1,24 @@
 import React, { useState } from 'react'
 import { EditButton } from './EditButton'
-import Modal from './Modal'
+//import Modal from './Modal'
+import './Modal.css'
 
-const DataToEdit = ({ data, isOpen, closeModal, openModal}) => {
-    const [data1, setData] = useState(data)
+const DataToEdit = ({ data, isOpen, closeModal, openModal }) => {
+    /* const [data1, setData] = useState(data) */
+    console.log(closeModal)
     return (
         <div className='d-flex justify-content-between date' >
             <span>
-                {data1}
+                {data}
             </span>
             <span className='position-relative' onClick={openModal}>
-                 < EditButton url="" />
-                <Modal isOpen={isOpen} closeModal={closeModal}>
-                   <h2>Aca Estoy</h2> 
-                </Modal>
+                < EditButton url="" />
+                <article className={`modals ${isOpen && "is-open"}`} onClick={closeModal}>
+                    <div className="modal-container">
+                        <button className="modal-close" onClick={closeModal}>X</button>
+                        <h2>{data}</h2>
+                    </div>
+                </article>
             </span>
         </div>
     )
