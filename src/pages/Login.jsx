@@ -18,7 +18,7 @@ function Login() {
             <CardTitle tag="h5">
               <div className='logo'>
                 <CardImg
-                  src="https://nets.com.ar/wp-content/uploads/2022/02/cropped-Logo-empresa-comunicacion-simple-morado-1.png"
+                  src="http://nets.com.ar/wp-content/uploads/2022/02/cropped-Logo-empresa-comunicacion-simple-morado-1.png"
                 />
               </div>
             </CardTitle>

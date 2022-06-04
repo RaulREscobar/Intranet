@@ -31,7 +31,7 @@ const EditProfile = () => {
         />
         < DataToEdit
           type="date"
-          data="21 de diciembre"
+          data="21/12/1993"
           isOpen={isOpenModal3}
           closeModal={closeModal3}
           openModal={openModal3}
