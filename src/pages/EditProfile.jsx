@@ -15,9 +15,27 @@ const EditProfile = () => {
       < TitleSection title="Hola Raul" />
       < User />
       <section className='bg-central pt-3' >
-        < DataToEdit data="Raul" isOpen={isOpenModal1} closeModal={closeModal1} openModal={openModal1} />
-        < DataToEdit data="Escobar" isOpen={isOpenModalLastName} closeModal={closeModal2} openModal={openModalLastName} />
-        < DataToEdit data="21 de diciembre" isOpen={isOpenModal3} closeModal={closeModal3} openModal={openModal3} />
+        < DataToEdit
+          type="text"
+          data="Raul"
+          isOpen={isOpenModal1}
+          closeModal={closeModal1}
+          openModal={openModal1}
+        />
+        < DataToEdit
+          type="text"
+          data="Escobar"
+          isOpen={isOpenModalLastName}
+          closeModal={closeModal2}
+          openModal={openModalLastName}
+        />
+        < DataToEdit
+          type="date"
+          data="21 de diciembre"
+          isOpen={isOpenModal3}
+          closeModal={closeModal3}
+          openModal={openModal3}
+        />
       </section>
       <BarNav />
     </div>
